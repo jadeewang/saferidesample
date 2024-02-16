@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Documentation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #030303;
+  }
+
+  #toc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #4f4a4f;
+    color: #fff;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #content {
+    margin-left: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    color: #ffffff;
+  }
+
+  h2 {
+    color: #b399b7;
+  }
+
+  h3 {
+    color: #c4c1c1;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  body {
+    color: #fff; /* Set text color to white */
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div id="toc">
+  <h3>Table of Contents</h3>
+  <style>
+    #toc {
+      color: #dfdfdf;
+    }
+  </style>
+  <ul id="toc-list"></ul>
+</div>
+
+<div id="content">
+  <h1>Welcome to Safe Ride 2.0</h1>
+  <h3 style="color: rgb(194, 192, 194);">designed by Jade Wang. DSGN208 Final Prototype. Fall 2023</h3>
+  <h2 id="overview">Overview</h2>
+  <p>Students are tired of long wait times and poor communication when they try to book their rides. SafeRide 2.0 addresses these concerns with features to improve accessibility to rides and live-time trip updates. With an improved but familiar interface, students can rely on SafeRide 2.0 to provide a seamless rider experience every night.</p>
+  <p>Watch the demo below to learn more.</p>
+  <video controls autoplay muted style="width: 475px; margin: 0 auto; display: block;">
+    <source src="prototype.mp4" type="video/mp4">
+  </video>
+  <style>
+    video {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+  <p style="text-align: center; font-size: 0.9em; color: #666">Designed on Figma</p>
+
+  <h2 id="app-features">Updated App Features</h2>
+  <ul>
+    <li><strong>Waitlist System:</strong> If no immediate rides are available, users will be invited to join the waitlist. If users accept, they will receive a predicted spot in the queue and estimated time for pickup. If users do not accept, alternative transportation options will be suggested.<br><br></li>
+    <img src="waitlistjoin.png" style="width: 200px; margin-right: 10px; display: inline-block;">
+    <img src="waitlist2.png" style="width: 200px; display: inline-block;">
+    <img src="waitlist3.png" style="width: 200px; margin-right: 10px; display: inline-block;">
+    <style>
+      img {
+        height: 400px;
+        object-fit: cover;
+      }
+    </style>
+    <div style="margin-bottom: 20px;"></div>
+    <li><strong>Carpool Option:</strong> To decrease wait time, users can opt in to shared rides with students commuting to nearby locations. Users can always toggle their carpool settings off and on depending on how comfortable they are riding with other students on a particular night. Carpool-booked rides will indicate how many riders the user should expect in the vehicle.<br><br></li>
+    <img src="SOS.png" style="width: 200px; margin-right: 10px; display: inline-block;">
+    <img src="carpool2.png" style="width: 200px; height: 400px; margin-left: 10px; display: inline-block;">
+    <div style="margin-bottom: 20px;"></div>
+    <li><strong>Lock Screen Reminder:</strong> To remind users of their pickup times, riders can now see driver ETA from the live notification on their lock screen. Corresponding vibration notifications can be enabled in phone settings. </li>
+    <div style="margin-bottom: 20px;"></div>
+    <img src="lockscreen.png" style="width: 200px; margin-right: 10px; display: inline-block;">
+  
+  </ul>
+
+  <h2 id="user-interface-design">Design Process</h2>
+  <p> To collect user research for our prototypes, here are the design-thinking tools we used.</p>
+  <ul>
+    <li><strong>Journey Maps:</strong> To better understand the specific pain points users were experiencing, we created emotional journey maps for our interviews. Below is an example of the SafeRide experience from the perspective of a female junior living off campus. This tool helped us visualize where we could optimize the rider experience.</li>
+    <div style="margin-bottom: 20px;"></div>
+    <img src="journey1.png" style="width: 750px; height: 330px; margin-bottom: 20px;">
+    <li><strong>User Flows:</strong> Using Notability, we sketched out the ideal user flow with Palka, our TA. This helped us identify what screens we needed to create in Figma. </li>
+    <div style="display: flex;">
+      <img src="userflow.png" style="width: 405px; height: 300px; margin-right: 10px;">
+      <img src="figmamockup.png" style="width: 340px; height: 300px">
+      <div style="margin-bottom: 20px;"></div>
+    </div>
+    <div style="margin-bottom: 20px;"></div>
+    <li><strong>Storyboards:</strong> We wanted to make sure our app was taking care of users, from beginning to end. By logging our goals for each step of the user experience on the 5E's chart, we held ourselves accountable to the user throughout iterations.   </li>
+    <div style="margin-bottom: 20px;"></div>
+    <img src="5E.png" style="width: 755px; margin-right: 10px; display: inline-block;">
+  </ul>
+
+  <h2 id="user-experience-flow">Next Steps</h2>
+  <p>It's not just SafeRide-- campus transportation as a whole needs to be improved. Some other considerations to explore in the future: </p>
+  <ul>
+    <li><strong>Driver Incentives:</strong> implemenet driver-designated parking zones, meal plans and subsidized gas to keep drivers engaged.</li>
+    <div style="margin-bottom: 20px;"></div>
+    <li><strong>Campus Shuttles:</strong> increase student awareness of shuttle routes by publicizing time tables on social media and upgrading bus shelters to reduce reliance on SafeRide.</li>
+  </ul>
+  <div style="margin-bottom: 20px;"></div>
+  <div style="margin-bottom: 20px;"></div>
+
+  <!-- Add more sections as needed -->
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    const tocList = document.getElementById("toc-list");
+    const contentSections = document.querySelectorAll("h2");
+    
+
+    contentSections.forEach(section => {
+      const listItem = document.createElement("li");
+      const link = document.createElement("a");
+      link.textContent = section.textContent;
+      link.href = "#" + section.id;
+      listItem.appendChild(link);
+      tocList.appendChild(listItem);
+    });
+  });
+</script>
+
+<style>
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Apply the animation to the header element */
+  h1 {
+    animation: fadeIn 1s ease-in;
+  }
+</style>
+
+</body>
+</html>
